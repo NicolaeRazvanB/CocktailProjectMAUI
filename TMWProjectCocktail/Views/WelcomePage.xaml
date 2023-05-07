@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TMWProjectCocktail.Views.WelcomePage"
+             Title="WelcomePage"
+             Shell.NavBarIsVisible="False">
+    <Grid
+        IgnoreSafeArea="{OnPlatform Android=False, iOS=True}">
+
+        <!-- Planet Images -->
+        <Image x:Name="welcome1"
+           Opacity="1"
+           Source="welcome1.jpg"
+           VerticalOptions="FillAndExpand"
+           HorizontalOptions="FillAndExpand"
+           Aspect="AspectFill"
+         />
+
+        <!-- Intro Box -->
+        <Border
+            x:Name="frmIntro"
+            Opacity="0"
+            Padding="24,32"
+            BackgroundColor="{StaticResource Gray100}"
+            Stroke="{StaticResource BorderColor}"
+            HorizontalOptions="Fill"
+            VerticalOptions="End"
+            Margin="20">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="24"/>
+            </Border.StrokeShape>
+
+            <VerticalStackLayout
+                Spacing="16">
+
+                <Label
+                    HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                    Style="{StaticResource IntroPageHeaderStyle}"
+                    Text="Welcome!"/>
+
+
+                <Label
+                    HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                    LineBreakMode="WordWrap"
+                    Style="{StaticResource IntroPageTextStyle}"
+                    Text="Indulge yourself in the world of Cocktails"/>
+
+                <Button
+                    Style="{StaticResource ButtonStyle}"
+                    Text="Discover more"
+                    HorizontalOptions="Center"
+                    Margin="0,12,0,6"
+                  />
+
+            </VerticalStackLayout>
+
+        </Border>
+
+    </Grid>
+</ContentPage>
