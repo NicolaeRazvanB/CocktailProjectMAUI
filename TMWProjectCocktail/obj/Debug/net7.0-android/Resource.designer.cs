@@ -14,7 +14,7 @@ namespace TMWProjectCocktail
 {
 	
 	
-	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "13.1.99.25")]
+	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "13.1.99.45")]
 	public partial class Resource
 	{
 		
@@ -8273,6 +8273,12 @@ namespace TMWProjectCocktail
 			
 			// aapt resource value: 0x7F0700D4
 			public const int welcome1 = 2131165396;
+			
+			// aapt resource value: 0x7F0700D5
+			public const int welcome2 = 2131165397;
+			
+			// aapt resource value: 0x7F0700D6
+			public const int welcome3 = 2131165398;
 			
 			static Drawable()
 			{
